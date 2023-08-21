@@ -9,6 +9,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{times}
+\usepackage{enumitem}
+\usepackage{microtype}
 %\usepackage[margin=1in]{geometry}
 \usepackage[pdfencoding=unicode]{hyperref}
 \usepackage[round]{natbib}
@@ -20,7 +22,7 @@
 
 \begin{document}
 \title{The Problems of Philosophy: Student Edition}
-\author{Bertrand Russell \\ \\ editing and student notes by Landon D. C. Elkind}
+\author{\doublespacing Bertrand Russell \and editing and student notes by Landon D. C. Elkind}
 \date{\today}
 
 \frontmatter
@@ -30,11 +32,17 @@
 \chapter*{Editor's Introduction}
 This is a very lightly edited open educational resource version of \href{https://archive.org/details/theproblemsofphi00russuoft}{\emph{The Problems of Philosophy}} by \href{https://bertrandrussellsociety.org/bertrand-russell/}{Bertrand Russell}. It is lightly edited to approach (without yet meeting) the ``truer'' text of \emph{The Problems of Philosophy} \href{https://mulpress.mcmaster.ca/russelljournal/article/view/4810}{indicated by Kenneth Blackwell in the journal \emph{Russell}}.\footnote{See ``A Truer Text of \emph{The Problems of Philosophy}, \emph{Russell} Vol. 41, No. 2, pp. 78-85.} Student notes from the editor are included to make the text more suitable for college (or high school) students. 
 
-The basis for this edition is \href{https://www.gutenberg.org/cache/epub/5827/pg5827-images.html}{this 2004 version available in HTML} through \emph{Project Gutenberg}, prodcued by Gordon Keener and David Widger. After using \href{https://pandoc.org/}{Pandoc} to convert this HTML file into TeX, I made some aesthetic edits (like replacing Roman numerals by Arabic ones and using Arabic numerals for footnote markers). All the source files and the resulting PDF compiled in TeX are hosted on this GitHub repository and updates will be pushed there.
+The basis for this edition is \href{https://www.gutenberg.org/cache/epub/5827/pg5827-images.html}{this 2004 version available in HTML} through \emph{Project Gutenberg}, produced by Gordon Keener and David Widger. After using \href{https://pandoc.org/}{Pandoc} to convert this HTML file into TeX, I made some aesthetic edits (like replacing Roman numerals by Arabic ones and using Arabic numerals for footnote markers). All the source files and the resulting PDF compiled in TeX are hosted on this GitHub repository and updates will be pushed there.
 
-It is my intent to produce two descendants of this book. The first is an \emph{illustrated} (and hopefully thereby improved) student edition that includes black-and-white diagrams for the reader while retaining the instructor notes. This edition might also include excerpts from works that Russell discusses in the text (like Berkeley's \emph{Three Dialogues} or Hume's \emph{Enquiry}). The second is a \emph{truer} edition without my notes for the student or primary sources but with Russell's index (with updated page numbers) and following the paragraph and sentence breaks in the 1967 edition published by Oxford University Press. This version will be closer to the ``truer'' text of \emph{Problems} than any version known to me has come. Both editions (like this one) will follow Blackwell's suggested emendations.
+It is my plan to produce two descendants of this book. The first is an \emph{illustrated} (and hopefully thereby improved) student edition that includes black-and-white diagrams for the reader while retaining the instructor notes. This edition will also include excerpts from primary sources that Russell discusses in the text. 
 
-This version of \emph{The Problems of Philosophy} is published under a Creative Commons license (\href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA 4.0}). The work done to produce this book was generously supported by an Affordable Textbook Initiative Grant from Western Kentucky University's Libraries. I thank the \href{http://www.russfound.org/}{Bertrand Russell Peace Foundation} for permission to reproduce Russell's terrific introduction to philosophy.
+The second is a \emph{truer} edition without my notes for the student or primary sources but with Russell's index (with updated page numbers) and following the paragraph and sentence breaks in the 1967 edition published by Oxford University Press. This will also be a ``truer'' text of \emph{Problems} than any other known to me. %Both editions (like this one) will follow Blackwell's suggested emendations.
+
+This version of \emph{The Problems of Philosophy} is published under a Creative Commons license (\href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA 4.0}). The work done to produce this book was generously supported by an Affordable Textbook Initiative Grant from Western Kentucky University's Libraries. I thank the \href{http://www.russfound.org/}{Bertrand Russell Peace Foundation}, who hold the copyright to \emph{The Problems of Philosophy}, for their permission to reproduce Russell's terrific introduction to philosophy.
+
+\begin{flushright}
+	Landon D. C. Elkind
+\end{flushright} 
 
 \hypertarget{preface}{%
 	\chapter*{Preface}\label{preface}}
@@ -52,11 +60,24 @@ sense-data to physical objects, and from the latter as regards
 probability and induction. I have also profited greatly by the
 criticisms and suggestions of Professor Gilbert Murray.
 
-\emph{Note to the seventeenth impression.} With reference to certain 
+\bigskip 
+
+1912
+
+\section*{Note to the Seventeenth Impression}
+
+With reference to certain 
 statements on pages \pageref{China1}, \pageref{China2}, \pageref{Balfour1}, 
 and \pageref{Balfour2}, it should be remarked that this book was 
 written in the early part of 1912, when China was still an empire, and 
 the name of the then late Prime Minister did begin with the letter B.
+
+\bigskip
+
+1943 
+\begin{flushright}
+	Bertrand Russell
+\end{flushright} 
 
 \tableofcontents
 
@@ -223,9 +244,10 @@ matter? (2) If so, what is its nature?
 
 The philosopher who first brought prominently forward the reasons for
 regarding the immediate objects of our senses as not existing
-independently of us was Bishop Berkeley (1685-1753). His \emph{Three
-Dialogues between Hylas and Philonous, in Opposition to Sceptics and
-Atheists}, undertake to prove that there is no such thing as matter at
+independently of us was \href{https://plato.stanford.edu/entries/berkeley/}
+{Bishop Berkeley} (1685-1753). His \href{https://archive.org/details/threedialoguesbe00berkiala}
+{\emph{Three Dialogues between Hylas and Philonous, in Opposition to Sceptics and Atheists}}, 
+undertake to prove that there is no such thing as matter at
 all, and that the world consists of nothing but minds and their ideas.
 Hylas has hitherto believed in matter, but he is no match for Philonous,
 who mercilessly drives him into contradictions and paradoxes, and makes
@@ -280,7 +302,8 @@ and very many philosophers, perhaps a majority, have held that there is
 nothing real except minds and their ideas. Such philosophers are called
 `idealists'. When they come to explaining
 matter, they either say, like Berkeley, that matter is really nothing
-but a collection of ideas, or they say, like Leibniz (1646-1716), that
+but a collection of ideas, or they say, like 
+\href{https://plato.stanford.edu/entries/leibniz/}{Leibniz} (1646-1716), that
 what appears as matter is really a collection of more or less
 rudimentary minds.
 
@@ -341,7 +364,9 @@ commonest things of daily life.
 \protect\hypertarget{link2HCH0002}{}{}
 
 \pagebreak
+
 \section{Notes for the Student}
+\markboth{CHAPTER 1 NOTES}{CHAPTER 1 NOTES}
 \section*{A bit about philosophers}
 Philosophers, like everyone else, often use arguments to critically study things around them. In fact philosophers are expected to use arguments professionally. But of course! Everyone uses arguments in daily life and as a vital part of whatever career they are in. And philosophers, like everyone you would \emph{want} as a friend, are (supposed to be) curious and invested in figuring out which beliefs are true. In these ways philosophers are just like everyone else (is supposed to be).
 
@@ -486,7 +511,7 @@ us. All this, which is psychological, we are not calling in question. In
 fact, whatever else may be doubtful, some at least of our immediate
 experiences seem absolutely certain.
 
-Descartes (1596-1650), the founder of modern philosophy, invented a
+\href{https://plato.stanford.edu/entries/descartes/}{Descartes} (1596-1650), the founder of modern philosophy, invented a
 method which may still be used with profit---the method of systematic
 doubt. \label{doubt} He determined that he would believe nothing which he did not see
 quite clearly and distinctly to be true. Whatever he could bring himself
@@ -717,7 +742,8 @@ philosophical problems involve.
 \protect\hypertarget{link2HCH0003}{}{}
 
 \pagebreak
-\section{Notes for the Student}
+\section{Notes for the Student} 
+\markboth{CHAPTER 2 NOTES}{CHAPTER 2 NOTES}
 \par Recall Russell's argument, which we put into the \emph{modus ponens} pattern below, for an object's appearances being distinct from its underlying reality:
 \begin{enumerate}
 	\item The table appears differently from different points of view.\hfill Premise
@@ -1021,6 +1047,7 @@ opinion fallacious---which idealists advance in favour of their theory.
 \protect\hypertarget{link2HCH0004}{}{}
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 3 NOTES}{CHAPTER 3 NOTES}
 \par Russell argued in Chapter 2 that matter exists. He notes that it is \textit{logically consistent} with all of our appearances that there is no underlying reality to the table, and that the world consists solely of one's own fleeting appearances (and no other minds with their own appearances!). This is why we cannot \textit{prove} that matter exists (\pageref{self}).
 \par But saying something is logically consistent is a weak claim: my being a god is \textit{logically consistent} with everything that you know about me. But it is highly unlikely.
 \par Now recall Russell's argument from kitties for holding that matter exists (\pageref{kitty}):
@@ -1307,6 +1334,7 @@ following chapters.
 \protect\hypertarget{link2HCH0005}{}{}
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 4 NOTES}{CHAPTER 4 NOTES}
 As we open Ch 4, let us recall what we agreed to so far:
 \begin{itemize}%[itemsep=0ex]
 	\item We must distinguish appearances (sense-data) from reality (physical objects).
@@ -1480,7 +1508,7 @@ they have sensations and feelings, nor therefore of the fact that they,
 the subjects of their sensations and feelings, exist.
 
 We have spoken of acquaintance with the contents of our minds as
-\emph{self}-\hspace{0pt}{consciousness}, but it is not, of course, consciousness of
+\emph{self}-consciousness, but it is not, of course, consciousness of
 our \emph{self}: it is consciousness of particular thoughts and
 feelings. The question whether we are also acquainted with our bare
 selves, as opposed to particular thoughts and feelings, is a very
@@ -1758,6 +1786,7 @@ therefore doubtful.
 \protect\hypertarget{link2HCH0006}{}{}
 \pagebreak 
 \section{Notes for the Student}
+\markboth{CHAPTER 5 NOTES}{CHAPTER 5 NOTES}
 In Ch 5, we will consider the sorts of things we know, and decide whether how we know them falls into our \textit{knowledge by acquaintance} or \textit{knowledge by description} (or both!). 
 Here are the various kinds of knowledge, on Russell's account, in a tree-format:
 \begin{center}
@@ -1988,17 +2017,17 @@ are examining.
 The principle we are examining may be called the \emph{principle of
 induction}, and its two parts may be stated as follows:
 
-(a) When a thing of a certain sort A has been found to be associated
-with a thing of a certain other sort B, and has never been found
-dissociated from a thing of the sort B, the greater the number of cases
-in which A and B have been associated, the greater is the probability
-that they will be associated in a fresh case in which one of them is
-known to be present;
-
-(b) Under the same circumstances, a sufficient number of cases of
-association will make the probability of a fresh association nearly a
-certainty, and will make it approach certainty without limit.
-
+\begin{enumerate}[label={(\emph{\alph*})}]
+	\item When a thing of a certain sort A has been found to be associated
+	with a thing of a certain other sort B, and has never been found
+	dissociated from a thing of the sort B, the greater the number of cases
+	in which A and B have been associated, the greater is the probability
+	that they will be associated in a fresh case in which one of them is
+	known to be present;
+	\item Under the same circumstances, a sufficient number of cases of
+	association will make the probability of a fresh association nearly a
+	certainty, and will make it approach certainty without limit.
+\end{enumerate}
 As just stated, the principle applies only to the verification of our
 expectation in a single fresh instance. But we want also to know that
 there is a probability in favour of the general law that things of the
@@ -2013,16 +2042,16 @@ repetitions, just as the probability of the particular case is. We may
 therefore repeat the two parts of our principle as regards the general
 law, thus:
 
-(a) The greater the number of cases in which a thing of the sort A has
-been found associated with a thing of the sort B, the more probable it
-is (if no cases of failure of association are known) that A is always
-associated with B;
-
-b) Under the same circumstances, a sufficient number of cases of the
-association of A with B will make it nearly certain that A is always
-associated with B, and will make this general law approach certainty
-without limit.
-
+\begin{enumerate}[label={(\emph{\alph*})}]
+	\item The greater the number of cases in which a thing of the sort A has
+	been found associated with a thing of the sort B, the more probable it
+	is (if no cases of failure of association are known) that A is always
+	associated with B;
+	\item Under the same circumstances, a sufficient number of cases of the
+	association of A with B will make it nearly certain that A is always
+	associated with B, and will make this general law approach certainty
+	without limit.
+\end{enumerate}
 It should be noted that probability is always relative to certain data.
 In our case, the data are merely the known cases of coexistence of A and
 B. There may be other data, which \emph{might} be taken into account,
@@ -2086,6 +2115,7 @@ of certainty.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 6 NOTES}{CHAPTER 6 NOTES}
 In Ch 6, we consider David Hume's \textit{problem of induction}. The problem, in a nutshell, is that \textit{any} argument from past experience to justify the principle of induction is circular. And circular arguments are bad. Let us first see why circular arguments are bad.
 \subsection*{Circular Arguments}
 A \textit{circular argument} is one in which the premises presuppose the desired conclusion. There are more and less straightforward cases of this. Here is an easy example:
@@ -2222,13 +2252,13 @@ tradition under the name of `Laws of
 Thought'.
 
 They are as follows:
-\begin{enumerate}
-	\item \label{identity} \emph{The law of identity}: `Whatever is,
-is.'
-	\item \label{lnc} \emph{The law of contradiction}: `Nothing can both
-be and not be.'
-	\item \label{lem} \emph{The law of excluded middle}: `Everything must
-either be or not be.'
+\begin{enumerate}[label=(\arabic*)]
+	\item {\emph{The law of identity}: `Whatever is,
+is.' \label{identity}} 
+	\item {\emph{The law of contradiction}: `Nothing can both
+be and not be.'  \label{lnc}}
+	\item {\emph{The law of excluded middle}: `Everything must
+either be or not be.' \label{lem}}
 \end{enumerate}
 These three laws are samples of self-evident logical principles, but are
 not really more fundamental or more self-evident than various other
@@ -2362,8 +2392,10 @@ people, or two of any other specified kind. But as soon as we are able
 to divest our thoughts of irrelevant particularity, we become able to
 see the general principle that two and two are four; any one instance is
 seen to be \emph{typical}, and the examination of other instances
-becomes unnecessary.\footnote{Cf. A. N. Whitehead, \emph{Introduction to Mathematics} (Home
-University Library).}
+becomes unnecessary.\footnote{Cf. 
+	\href{https://plato.stanford.edu/entries/whitehead/}{A. N. Whitehead}, 
+	\href{https://archive.org/details/introductiontoma00whitiala/mode/2up}
+	{\emph{Introduction to Mathematics}} (Home University Library).}
 
 The same thing is exemplified in geometry. If we want to prove some
 property of \emph{all} triangles, we draw some one triangle and reason
@@ -2464,14 +2496,15 @@ knowledge? And more particularly, how can there be knowledge of general
 propositions in cases where we have not examined all the instances, and
 indeed never can examine them all, because their number is infinite?
 These questions, which were first brought prominently forward by the
-German philosopher Kant (1724-1804), are very difficult, and
-historically very important.
+German philosopher \href{https://plato.stanford.edu/entries/kant/}{Kant} 
+(1724-1804), are very difficult, and historically very important.
 
 \protect\hypertarget{link2HCH0008}{}{}
 
 \pagebreak
 
 \section{Notes for the Student}
+\markboth{CHAPTER 7 NOTES}{CHAPTER 7 NOTES}
 We saw in Ch 6 that Hume's problem of induction can be put like this:
 \begin{enumerate}
 	\item If the principle of induction is justified, then it is either justified \textit{a priori} or justified \textit{a posteriori}. \hfill Hume's Fork
@@ -2544,7 +2577,8 @@ philosophers before Kant, the law of contradiction, which asserts that
 nothing can at the same time have and not have a certain property,
 sufficed to establish the truth of all \emph{a priori} knowledge.
 
-Hume (1711-76), who preceded Kant, accepting the usual view as to what
+\href{https://plato.stanford.edu/entries/hume/}{Hume} (1711-76), 
+who preceded Kant, accepting the usual view as to what
 makes knowledge \emph{a priori}, discovered that, in many cases which
 had previously been supposed analytic, and notably in the case of cause
 and effect, the connexion was really synthetic. Before Hume,
@@ -2621,7 +2655,13 @@ are due to our own nature, and therefore nothing can ever come into our
 experience without acquiring these characteristics.
 
 The physical object, which he calls the `thing in
-itself',(1) he regards as essentially unknowable; what
+itself',\footnote{Kant's `thing in
+	itself' is identical \emph{in definition} with the
+	physical object, namely, it is the cause of sensations. In the
+	properties deduced from the definition it is not identical, since Kant
+	held (in spite of some inconsistency as regards cause) that we can know
+	that none of the categories are applicable to the `thing
+	in itself'.} he regards as essentially unknowable; what
 can be known is the object as we have it in experience, which he calls
 the `phenomenon'. The phenomenon, being a
 joint product of us and the thing in itself, is sure to have those
@@ -2633,14 +2673,6 @@ we cannot know anything about the thing in itself or about what is not
 an actual or possible object of experience. In this way he tries to
 reconcile and harmonize the contentions of the rationalists with the
 arguments of the empiricists.
-
-(1) Kant's `thing in
-itself' is identical \emph{in definition} with the
-physical object, namely, it is the cause of sensations. In the
-properties deduced from the definition it is not identical, since Kant
-held (in spite of some inconsistency as regards cause) that we can know
-that none of the categories are applicable to the `thing
-in itself'.
 
 Apart from minor grounds on which Kant's philosophy may
 be criticized, there is one main objection which seems fatal to any
@@ -2758,6 +2790,7 @@ questions with which we have been dealing.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 8 NOTES}{CHAPTER 8 NOTES}
 As we saw in Ch 7, Russell maintains that we have \textit{a priori} knowledge that is not uninformative and tautologous. Russell clarifies this with a standard distinction between \textit{analytic} and \textit{synthetic} claims. He draws on Kant's work, \textit{The Critique of Pure Reason}. 
 
 Now let us first understand what it means to say of a claim that it is not analytic, but rather it is synthetic. Kant explains the distinction thusly (\textit{Critique of Pure Reason}, \S IV):
@@ -2807,8 +2840,8 @@ the nature of this kind of being, and also what objects there are that
 have this kind of being. We will begin with the latter question.
 
 The problem with which we are now concerned is a very old one, since it
-was brought into philosophy by Plato. Plato's
-`theory of ideas' is an attempt to
+was brought into philosophy by \href{https://plato.stanford.edu/entries/plato/}{Plato}. 
+Plato's `theory of ideas' is an attempt to
 solve this very problem, and in my opinion it is one of the most
 successful attempts hitherto made. The theory to be advocated in what
 follows is largely Plato's, with merely such
@@ -2919,8 +2952,9 @@ thing in the universe, or, if there are many things, they cannot
 possibly interact in any way, since any interaction would be a relation,
 and relations are impossible.
 
-The first of these views, advocated by Spinoza and held in our own day
-by Bradley and many other philosophers, is called \emph{monism}; the
+The first of these views, advocated by \href{https://plato.stanford.edu/entries/spinoza/}{Spinoza} 
+and held in our own day by \href{https://plato.stanford.edu/entries/bradley/}{Bradley} 
+and many other philosophers, is called \emph{monism}; the
 second, advocated by Leibniz but not very common nowadays, is called
 \emph{monadism}, because each of the isolated things is called a
 \emph{monad}. Both these opposing philosophies, interesting as they are,
@@ -3084,6 +3118,7 @@ we were first led to consider universals.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 9 NOTES}{CHAPTER 9 NOTES}
 As we saw in Ch  8, Russell wants \textit{a priori} justification to be both necessary and about real objects, not merely about how we are built. Given that constraint, transcendental philosophy is out. What is needed are a certain kind of real object: eternal, unchanging, necessarily existing entities that can be the subject-matter of mathematics and logic.
 \subsection*{Introducing Universals}
 Universals are just the eternal, unchanging, necessarily existing entities that logic and math is all about! These are the entities that Russell sought. Let us first see why we need them.
@@ -3396,6 +3431,7 @@ intuitive judgements.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 10 NOTES}{CHAPTER 10 NOTES}
 As we saw in Ch 9, Russell believes that there are universals, that they are non-mental, and that do not exist in space and time. Rather, they \textit{subsist} (or \textit{have being}). But how do we know such entities? This chapter is concerned to explain that.
 
 We have perceptions of sensible qualities all the time: colors, sounds, tastes, smells, and so on. Russell wants to claim that, by a minimal effort of \textit{abstraction}, we come to recognize sensible universals (\pageref{sensible}). Moreover, we can also become aware of \textit{relations between data of sense and memory}, like spatial and temporal relations (\pageref{spacetime}). We become aware of relations of \textit{resemblance} in much the same way (\pageref{resemblance}). 
@@ -3624,6 +3660,7 @@ knowledge and error.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 11 NOTES}{CHAPTER 11 NOTES}
 As we saw in Ch 5, Russell is a \textit{foundationalist} about justification; he reaffirms this view in discussing ``some insistent Socrates" (\pageref{socrates}). Foundationalists hold that all justification terminates in beliefs that are not inferred from anything, but are justified on the basis of evidence or self-evidence. For example, the belief that there is a table in this room is justified on evidence. A belief in the law of contradiction is justified on self-evidence.
 
 Russell holds that self-evidence comes in degrees. So self-evident is not equivalent to \textit{certain}. Many uncertain beliefs will be self-evident in Russell's sense, like the belief in the principle of induction, self-evident beliefs in ethics, or beliefs based on memory (\pageref{uncertain}). But all these beliefs will be what Russell calls \textit{intuitive beliefs} (or \textit{judgments}).
@@ -3646,7 +3683,6 @@ Here is an exercise for you: give an example of each kind of self-evident truth-
 
 \hypertarget{chapter-xii.-truth-and-falsehood}{%
 \chapter{Truth and Falsehood}\label{chapter-xii.-truth-and-falsehood}}
-
 Our knowledge of truths, unlike our knowledge of things, has an
 opposite, namely \emph{error}. So far as things are concerned, we may
 know them or not know them, but there is no positive state of mind which
@@ -3670,48 +3706,41 @@ chapter. In this chapter we are not asking how we can know whether a
 belief is true or false: we are asking what is meant by the question
 whether a belief is true or false. It is to be hoped that a clear answer
 to this question may help us to obtain an answer to the question what
-beliefs are true, but for the present we ask only `What
-is truth?' and `What is
-falsehood?' not `What beliefs are
-true?' and `What beliefs are
-false?' It is very important to keep these different
-questions entirely separate, since any confusion between them is sure to
-produce an answer which is not really applicable to either.
+beliefs are true, but for the present we ask only `What is truth?' and 
+`What is falsehood?' not `What beliefs are true?' and 
+`What beliefs are false?' It is very important to keep these different
+questions entirely separate, since any confusion between them is 
+sure to produce an answer which is not really applicable to either.
 
 There are three points to observe in the attempt to discover the nature
 of truth, three requisites which any theory must fulfil.
-
 \begin{enumerate}
-	\item Our theory of truth must be such as to admit of its opposite,
-	falsehood. A good many philosophers have failed adequately to satisfy
-	this condition: they have constructed theories according to which all
-	our thinking ought to have been true, and have then had the greatest
-	difficulty in finding a place for falsehood. In this respect our theory
-	of belief must differ from our theory of acquaintance, since in the case
-	of acquaintance it was not necessary to take account of any opposite.
-	\item It seems fairly evident that if there were no beliefs there could be
-	no falsehood, and no truth either, in the sense in which truth is
-	correlative to falsehood. If we imagine a world of mere matter, there
-	would be no room for falsehood in such a world, and although it would
-	contain what may be called `facts', it
-	would not contain any truths, in the sense in which truths are things of
-	the same kind as falsehoods. In fact, truth and falsehood are properties
-	of beliefs and statements: hence a world of mere matter, since it would
-	contain no beliefs or statements, would also contain no truth or
-	falsehood.
-	\item But, as against what we have just said, it is to be observed that
-	the truth or falsehood of a belief always depends upon something which
-	lies outside the belief itself. If I believe that Charles I died on the
-	scaffold, I believe truly, not because of any intrinsic quality of my
-	belief, which could be discovered by merely examining the belief, but
-	because of an historical event which happened two and a half centuries
-	ago. If I believe that Charles I died in his bed, I believe falsely: no
-	degree of vividness in my belief, or of care in arriving at it, prevents
-	it from being false, again because of what happened long ago, and not
-	because of any intrinsic property of my belief. Hence, although truth
-	and falsehood are properties of beliefs, they are properties dependent
-	upon the relations of the beliefs to other things, not upon any internal
-	quality of the beliefs.
+	\item[(1)] Our theory of truth must be such as to admit of its opposite, falsehood. 
+	A good many philosophers have failed adequately to satisfy this condition: 
+	they have constructed theories according to which all our thinking ought to 
+	have been true, and have then had the greatest difficulty in finding a place 
+	for falsehood. In this respect our theory of belief must differ from our theory 
+	of acquaintance, since in the case of acquaintance it was not necessary to take 
+	account of any opposite. 
+	\item[(2)] It seems fairly evident that if there were no beliefs there could be no 
+	falsehood, and no truth either, in the sense in which truth is correlative to 
+	falsehood. If we imagine a world of mere matter, there would be no room for 
+	falsehood in such a world, and although it would contain what may be called 
+	`facts', it would not contain any truths, in the sense in which truths are things 
+	of the same kind as falsehoods. In fact, truth and falsehood are properties of 
+	beliefs and statements: hence a world of mere matter, since it would contain 
+	no beliefs or statements, would also contain no truth or falsehood.
+	\item[(3)] But, as against what we have just said, it is to be observed that the truth 
+	or falsehood of a belief always depends upon something which lies outside the 
+	belief itself. If I believe that Charles I died on the scaffold, I believe truly, not 
+	because of any intrinsic quality of my belief, which could be discovered by 
+	merely examining the belief, but because of an historical event which happened 
+	two and a half centuries ago. If I believe that Charles I died in his bed, I believe 
+	falsely: no degree of vividness in my belief, or of care in arriving at it, prevents 
+	it from being false, again because of what happened long ago, and not because 
+	of any intrinsic property of my belief. Hence, although truth and falsehood are 
+	properties of beliefs, they are properties dependent upon the relations of the 
+	beliefs to other things, not upon any internal quality of the beliefs.
 \end{enumerate}
 The third of the above requisites leads us to adopt the view---which has
 on the whole been commonest among philosophers---that truth consists in
@@ -3974,6 +4003,7 @@ chapter.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 12 NOTES}{CHAPTER 12 NOTES}
 	\subsection*{Defining Truth}
 Defining \textit{what it is for a belief to be true} is difficult because beliefs can be true or false. You just \textit{have} acquaintance or not. But you can have beliefs that are \textit{true} or that are \textit{false}. So how do we define the truth of a belief?
 \subsection*{Coherence Theory of Truth}
@@ -4275,6 +4305,7 @@ knowledge.
 
 \pagebreak
 	\section{Notes for the Student}
+	\markboth{CHAPTER 13 NOTES}{CHAPTER 13 NOTES}
 In Ch 12 we defined truth as correspondence of a belief to a fact. Now we want to develop a three-fold classification of beliefs: they are either \textit{knowledge}, \textit{error}, or \textit{probable opinion}.
 \subsection*{Derivative/Inferred Knowledge}
 First, Russell argues that true belief is not \textit{sufficient} for knowledge because someone that only believes truly that $p$ \textit{by luck} or \textit{coincidence} is not said to know that $p$ (\pageref{luck}). A belief that $p$ is not knowledge when it is based on another false belief or a fallacious inference (\pageref{fallacious}). Plato takes up a similar point in the \textit{Theaetetus}, which is a dialogue about the definition of \textit{knowledge}. When Theaetetus suggests that knowledge is true belief, Socrates objects that a jury might truly believe that someone is guilty of a crime, and even convict them of it, by being persuaded by a good prosecution; but this would not give them knowledge of that person's committing the crime (200d-201c). The result of all this is:
@@ -4332,7 +4363,7 @@ the kind of way in which such reasoning is attempted, with a view to
 discovering whether we can hope that it may be valid.
 
 The great representative, in modern times, of the kind of view which we
-wish to examine, was Hegel (1770-1831). \label{hegel} Hegel's
+wish to examine, was \href{https://plato.stanford.edu/entries/hegel/}{Hegel} (1770-1831). \label{hegel} Hegel's
 philosophy is very difficult, and commentators differ as to the true
 interpretation of it. According to the interpretation I shall adopt,
 which is that of many, if not most, of the commentators and has the
@@ -4607,6 +4638,7 @@ performed.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 14 NOTES}{CHAPTER 14 NOTES}
 Philosophers have traditionally attempted to establish ethical truths or claims about the whole universe. The tradition is widespread, ongoing, and highly varied. For example:
 \begin{itemize}
 	\item Parmenides (400s BCE) in his poem \textit{On Nature} aims to establish that ``What Is" (the universe, presumably) is one interconnected, continuous, eternal, unchanging whole.
@@ -4868,6 +4900,7 @@ which constitutes its highest good.
 
 \pagebreak
 \section{Notes for the Student}
+\markboth{CHAPTER 15 NOTES}{CHAPTER 15 NOTES}
 As we saw in Ch 14, Russell holds that philosophy cannot establish ethical truths. Nonetheless, he claims that philosophy has value. He is especially focuses on prejudice against philosophy by persons more interested in ``science or practical affairs" (\pageref{practical}).
 
 Russell suggests that such persons have a wrong view of both \textit{the ends of life} and \textit{the goods philosophizing brings}. Empirical sciences have the advantage that they deliver goods that everyone enjoys, even those that are not engaged in empirical science, like roads and bridges, electronics, and so on. But philosophy does not deliver these sorts of goods that those not engaged in philosophy can enjoy. Only those engaged in philosophizing \textit{directly} enjoy its benefits, although its practitioners can \textit{indirectly} benefit those not engaged in philosophy:
